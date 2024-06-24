@@ -53,17 +53,17 @@ export default function Home() {
 
         <div className="flex flex-col bg-[#2B2B2B40] p-2" id="payment">
           <p className="text-[#636665]">Choose payment method</p>
-          <div className="flex w-full bg-[#222222] justify-around">
-            <div className=" bg-[#222222] content-center p-4 max-w-[164px] max-h-[164px] cursor-pointer">
+          <div className="flex w-full bg-[#1B1B1B] justify-around">
+            <div className="content-center p-4 max-w-[164px] max-h-[164px] cursor-pointer">
               <Image src="/images/ltc.png" alt="Paypal" width={32} height={64} className="hover:scale-110 transition-all" />
             </div>
-            <div className="bg-[#222222] content-center p-4 max-w-[164px] max-h-[164px] cursor-pointer">
+            <div className="content-center p-4 max-w-[164px] max-h-[164px] cursor-pointer">
               <Image src="/images/eth.png" alt="Paypal" width={32} height={64} className="hover:scale-110 transition-all" />
             </div>
             <div className="backgroundglow content-center p-4 max-w-[164px] max-h-[164px] cursor-pointer border-[#0E959980] border-2">
               <Image src="/images/tether.png" alt="Paypal" width={32} height={64} className="hover:scale-110 transition-all" />
             </div>
-            <div className=" bg-[#222222] content-center p-4 max-w-[164px] max-h-[164px] cursor-pointer">
+            <div className="content-center p-4 max-w-[164px] max-h-[164px] cursor-pointer">
               <Image src="/images/btc.png" alt="Paypal" width={32} height={64} className="hover:scale-110 transition-all" />
             </div>
           </div>
