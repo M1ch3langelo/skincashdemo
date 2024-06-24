@@ -9,7 +9,7 @@ export default function Home() {
     <>
     <Image src="/images/blob1.png" alt="Background" width={452} height={152} className="absolute -z-10" />
     <Image src="/images/blob2.png" alt="Background" width={552} height={152} className="absolute right-0 -z-10" />
-    <main className="home flex flex-col h-screen p-4">
+    <main className="home flex flex-col h-full p-4">
       <nav className="nav flex justify-between w-full p-4 text-white">
         <div className="logo items-center flex">
           <Image src="/images/logo.png" alt="Logo" width={200} height={50} />
@@ -51,7 +51,7 @@ export default function Home() {
           <p className="text-right text-[#3EFF9EBF] mt-4 cursor-pointer">Change trade URL</p>
         </div>
 
-        <div className="flex flex-col" id="payment">
+        <div className="flex flex-col bg-[#2B2B2B40] p-2" id="payment">
           <p className="text-[#636665]">Choose payment method</p>
           <div className="flex w-full bg-[#222222] justify-around">
             <div className=" bg-[#222222] content-center p-4 max-w-[164px] max-h-[164px] cursor-pointer">
@@ -110,7 +110,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="footer flex justify-between w-full p-4 text-white">
+    </main>
+    <footer className="footer flex justify-between w-full p-4 text-white bg-[#1A1A1A] pt-[20px]">
         <div className="flex flex-col space-y-4">
         <div className="logo items-center flex">
           <Image src="/images/logogray.png" alt="Logo" width={150} height={50} />
@@ -133,7 +134,6 @@ export default function Home() {
           <li className="nav-link text-[#8D8D8D] cursor-pointer hover:text-[#3FFE9ECC] transition-all">Service</li>
         </ul>
       </footer>
-    </main>
     </>
   );
 }
