@@ -52,7 +52,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col bg-[#2B2B2B40] p-2" id="payment">
-          <p className="text-[#636665]">Choose payment method</p>
+          <p className="text-[#636665] font-semibold">Choose payment method</p>
           <div className="flex w-full bg-[#1B1B1B] justify-around">
             <div className="content-center p-4 max-w-[164px] max-h-[164px] cursor-pointer">
               <Image src="/images/ltc.png" alt="Paypal" width={32} height={64} className="hover:scale-110 transition-all" />
@@ -73,14 +73,14 @@ export default function Home() {
             <p className="text-center text-[#0E9599] ml-3 text-sm">TETHER</p>
             <p className="select-none text-[#1B1B1B]">BTC</p>
           </div>
-          <p className="text-[#636665]">Wallet address</p>
+          <p className="text-[#636665] font-semibold">Wallet address</p>
           <input type="text" placeholder="Enter wallet address" className="bg-[#1B1B1B] border-[#222222] border-[1px] text-[#4A4A4A] placeholder-[#4A4A4A] p-2" />
-          <p className="text-[#636665]">Promo Code</p>
+          <p className="text-[#636665] font-semibold">Promo Code</p>
           <div className="flex">
             <input type="text" placeholder="Enter promo code" className="bg-[#1B1B1B] border-[#222222] border-[1px] text-[#4A4A4A] placeholder-[#4A4A4A] p-2" />
             <button className="bg-[#1F1F1F] text-[#4A4A4A] p-2">Claim</button>
           </div>
-          <p className="text-[#636665]">Selected Items</p>
+          <p className="text-[#636665] font-semibold">Selected Items</p>
           <div className="w-[336px] h-[234px] border-[#222222] border-[1px]"></div>
           <div className="border-[#222222] border-[1px] flex flex-col p-2 mt-8 space-y-2">
             <div className="flex w-full justify-between">
@@ -103,8 +103,8 @@ export default function Home() {
               <p className="text-[#3FFE9E]">$120.00</p>
             </div>
             <div className="flex">
-            <p className="text-[#606261] ">You will receive:</p>
-            <p className="text-[#3FFE9E] ml-1"> $4,200.69</p>
+            <p className="text-[#606261] font-semibold ">You will receive:</p>
+            <p className="text-[#3FFE9E] ml-1 font-semibold"> $4,200.69</p>
             </div>
             <button className="bg-[#3FFE9E] text-black font-bold py-2 border-[#00000045] border-2 hover:scale-[1.025] transition-all">Add $1.00 to proceed</button>
           </div>
