@@ -15,9 +15,9 @@ export default function Home() {
           <Image src="/images/logo.png" alt="Logo" width={200} height={50} />
         </div>
         <ul className="nav-links flex space-x-4 items-center">
-          <li className="nav-link text-[#3FFE9ECC] cursor-pointer hover:text-[#3FFE9ECC] transition-all">SELL SKINS</li>
-          <li className="nav-link text-[#FFFFFF4D] cursor-pointer hover:text-[#3FFE9ECC] transition-all">HOW IT WORKS?</li>
-          <li className="nav-link text-[#FFFFFF4D] cursor-pointer hover:text-[#3FFE9ECC] transition-all">FAQ</li>
+          <li className="nav-link text-[#3FFE9ECC] cursor-pointer hover:text-[#3FFE9ECC] transition-all font-bold">SELL SKINS</li>
+          <li className="nav-link text-[#FFFFFF4D] cursor-pointer hover:text-[#3FFE9ECC] transition-all font-bold">HOW IT WORKS?</li>
+          <li className="nav-link text-[#FFFFFF4D] cursor-pointer hover:text-[#3FFE9ECC] transition-all font-bold">FAQ</li>
           <button className="bg-[#3FFE9E] rounded-sm text-black font-bold p-2 hover:scale-[1.025] transition-all">
             Login via Steam
           </button>
