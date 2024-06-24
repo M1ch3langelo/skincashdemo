@@ -14,3 +14,10 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.backgroundglow {
+  background-image: 
+    url('/images/bgglow.png');
+  background-size: fill;
+  background-position: center;
+}
