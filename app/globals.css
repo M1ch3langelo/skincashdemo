@@ -66,3 +66,14 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(26px);
 }
+
+.coin {
+  transition: filter 0.3s, box-shadow 0.3s;
+}
+.coin:hover {
+  filter: drop-shadow(0 0 10px aqua);
+}
+
+.coinselected{
+  filter: drop-shadow(0 0 10px aqua);
+}
