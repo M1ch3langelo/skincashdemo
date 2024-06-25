@@ -64,11 +64,11 @@ export default function Home() {
           <p className="text-[#FFFFFF4D]">Your Inventory</p>
           <div className="flex flex-col lg:flex-row lg:space-x-4 mt-4 lg:justify-between space-y-4 lg:space-y-0">
             <input type="text" placeholder="Search Item..." className="bg-[#1B1B1B] border-[#222222] border-[1px] text-[#4A4A4A] placeholder-[#4A4A4A] w-full lg:max-w-[336px] xl:max-w-[536px] h-[48px] pl-4" />
-            <select name="items" id="items" className="bg-[#1B1B1B] border-[#222222] border-[1px] text-[#4A4A4A] placeholder-[#4A4A4A] h-[48px] w-full lg:max-w-[178px] xl:max-w-[378px]">
+            <select name="items" id="items" className="bg-[#1B1B1B] px-2 border-[#222222] border-[1px] text-[#4A4A4A] placeholder-[#4A4A4A] h-[48px] w-full lg:max-w-[178px] xl:max-w-[378px]">
               <option value="volvo">Tradeable Items</option>
               <option value="saab">Locked Items</option>
             </select>
-            <select name="items" id="items" className="bg-[#1B1B1B] border-[#222222] border-[1px] text-[#4A4A4A] placeholder-[#4A4A4A] h-[48px] w-full lg:max-w-[178px] xl:max-w-[378px]">
+            <select name="items" id="items" className="bg-[#1B1B1B] px-2 border-[#222222] border-[1px] text-[#4A4A4A] placeholder-[#4A4A4A] h-[48px] w-full lg:max-w-[178px] xl:max-w-[378px]">
               <option value="volvo">Quality</option>
               <option value="saab">Factory New</option>
             </select>
@@ -94,22 +94,22 @@ export default function Home() {
           <p className="text-[#636665] font-semibold">Choose payment method</p>
           <div className="flex w-full bg-[#1B1B1B] justify-evenly mt-2 border-[1px] border-[#222222]">
             <div 
-              className={`content-center p-4 max-w-[164px] max-h-[164px] cursor-pointer ${isLtcSelected ? 'coinselected' : ''}`} 
+              className={`content-center p-4 max-w-[164px] max-h-[164px] cursor-pointer ${isLtcSelected ? 'ltcselected' : ''}`} 
               onClick={handleLtcSelected}>
-              <svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg" className={`coin ${isLtcSelected ? 'fill-[#039196]' : ''}`}>
-                <path fillRule="evenodd" clipRule="evenodd" d="M2.82682 22.428L0 23.536L1.36289 18.018L4.22339 16.858L8.34575 0H18.5061L15.497 12.392L18.2901 11.25L16.9431 16.75L14.1163 17.892L12.4364 24.858H27.7333L26.004 32H0.4992L2.82682 22.428Z" fill={isLtcSelected ? "#039196" : "#3C3C3C"}/>
+              <svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg" className={`ltc ${isLtcSelected ? 'fill-[#898989]' : ''}`}>
+                <path fillRule="evenodd" clipRule="evenodd" d="M2.82682 22.428L0 23.536L1.36289 18.018L4.22339 16.858L8.34575 0H18.5061L15.497 12.392L18.2901 11.25L16.9431 16.75L14.1163 17.892L12.4364 24.858H27.7333L26.004 32H0.4992L2.82682 22.428Z" fill={isLtcSelected ? "#898989" : "#3C3C3C"}/>
               </svg>
             </div>
             <div 
-              className={`content-center p-4 max-w-[164px] max-h-[164px] cursor-pointer ${isEthSelected ? 'coinselected' : ''}`}
+              className={`content-center p-4 max-w-[164px] max-h-[164px] cursor-pointer ${isEthSelected ? 'ethselected' : ''}`}
               onClick={handleEthSelected}>
-              <svg width="26" height="41" viewBox="0 0 26 41" fill="none" xmlns="http://www.w3.org/2000/svg" className={`coin ${isEthSelected ? 'fill-[#039196]' : ''}`}>
-                <path d="M12.8087 0V15.1524L25.6156 20.8751L12.8087 0Z" fill={isEthSelected ? "#039196" : "white"} fillOpacity="0.15"/>
-                <path d="M12.8086 0L0 20.8751L12.8086 15.1524V0Z" fill={isEthSelected ? "#039196" : "white"} fillOpacity="0.11"/>
-                <path d="M12.8086 30.6942V40.9899L25.6241 23.2598L12.8086 30.6942Z" fill={isEthSelected ? "#039196" : "white"} fillOpacity="0.15"/>
-                <path d="M12.8086 40.9899V30.6925L0 23.2598L12.8086 40.9899Z" fill={isEthSelected ? "#039196" : "white"} fillOpacity="0.11"/>
-                <path d="M12.8086 28.3117L25.6155 20.8755L12.8086 15.1562V28.3117Z" fill={isEthSelected ? "#039196" : "white"} fillOpacity="0.1"/>
-                <path d="M0 20.8755L12.8086 28.3117V15.1562L0 20.8755Z" fill={isEthSelected ? "#039196" : "white"} fillOpacity="0.15"/>
+              <svg width="26" height="41" viewBox="0 0 26 41" fill="none" xmlns="http://www.w3.org/2000/svg" className={`eth ${isEthSelected ? 'fill-[#48cbd9]' : ''}`}>
+                <path d="M12.8087 0V15.1524L25.6156 20.8751L12.8087 0Z" fill={isEthSelected ? "#627EEB" : "#FFFFFF26"} fillOpacity="1"/>
+                <path d="M12.8086 0L0 20.8751L12.8086 15.1524V0Z" fill={isEthSelected ? "#627EEB" : "#FFFFFF1C"} fillOpacity="1"/>
+                <path d="M12.8086 30.6942V40.9899L25.6241 23.2598L12.8086 30.6942Z" fill={isEthSelected ? "#627EEB" : "#FFFFFF26"} fillOpacity="1"/>
+                <path d="M12.8086 40.9899V30.6925L0 23.2598L12.8086 40.9899Z" fill={isEthSelected ? "#627EEB" : "#FFFFFF1A"} fillOpacity="1"/>
+                <path d="M12.8086 28.3117L25.6155 20.8755L12.8086 15.1562V28.3117Z" fill={isEthSelected ? "#627EEB" : "#FFFFFF1A"} fillOpacity="1"/>
+                <path d="M0 20.8755L12.8086 28.3117V15.1562L0 20.8755Z" fill={isEthSelected ? "#627EEB" : "#FFFFFF26"} fillOpacity="1"/>
               </svg>
             </div>
             <div 
@@ -121,24 +121,24 @@ export default function Home() {
             </div>
             <div 
               onClick={handleBtcSelected}
-              className={`content-center max-w-[164px] max-h-[164px] cursor-pointer ${isBtcSelected ? 'coinselected' : ''}`}>
-              <svg width="31" height="40" viewBox="0 0 31 40" fill="none" xmlns="http://www.w3.org/2000/svg" className={`coin ${isBtcSelected ? 'fill-[#039196]' : ''}`}>
-                <path d="M30.3765 16.04C31.0045 11.848 27.8105 9.594 23.4465 8.09L24.8625 2.41L21.4065 1.55L20.0265 7.08C19.1185 6.852 18.1865 6.64 17.2565 6.428L18.6465 0.862L15.1905 0L13.7745 5.678C13.0225 5.506 12.2825 5.338 11.5665 5.158L11.5705 5.14L6.8025 3.95L5.8825 7.642C5.8825 7.642 8.4485 8.23 8.3945 8.266C9.7945 8.616 10.0465 9.542 10.0045 10.278L8.3925 16.748C8.4885 16.772 8.6125 16.808 8.7525 16.862L8.3865 16.772L6.1265 25.836C5.9545 26.26 5.5205 26.898 4.5405 26.656C4.5765 26.706 2.0285 26.03 2.0285 26.03L0.3125 29.986L4.8125 31.108C5.6485 31.318 6.4685 31.538 7.2745 31.744L5.8445 37.488L9.2985 38.348L10.7145 32.668C11.6585 32.922 12.5745 33.158 13.4705 33.382L12.0585 39.038L15.5145 39.898L16.9445 34.166C22.8405 35.282 27.2725 34.832 29.1385 29.5C30.6425 25.208 29.0645 22.73 25.9625 21.116C28.2225 20.596 29.9225 19.11 30.3765 16.04ZM22.4765 27.116C21.4105 31.41 14.1805 29.088 11.8365 28.506L13.7365 20.896C16.0805 21.482 23.5945 22.64 22.4765 27.116ZM23.5465 15.978C22.5725 19.884 16.5565 17.898 14.6065 17.412L16.3265 10.512C18.2765 10.998 24.5625 11.904 23.5465 15.978Z" fill={isBtcSelected ? "#039196" : "#3C3C3C"}/>
+              className={`content-center max-w-[164px] max-h-[164px] cursor-pointer ${isBtcSelected ? 'btcselected' : ''}`}>
+              <svg width="31" height="40" viewBox="0 0 31 40" fill="none" xmlns="http://www.w3.org/2000/svg" className={`btc ${isBtcSelected ? 'fill-[#039196]' : ''}`}>
+                <path d="M30.3765 16.04C31.0045 11.848 27.8105 9.594 23.4465 8.09L24.8625 2.41L21.4065 1.55L20.0265 7.08C19.1185 6.852 18.1865 6.64 17.2565 6.428L18.6465 0.862L15.1905 0L13.7745 5.678C13.0225 5.506 12.2825 5.338 11.5665 5.158L11.5705 5.14L6.8025 3.95L5.8825 7.642C5.8825 7.642 8.4485 8.23 8.3945 8.266C9.7945 8.616 10.0465 9.542 10.0045 10.278L8.3925 16.748C8.4885 16.772 8.6125 16.808 8.7525 16.862L8.3865 16.772L6.1265 25.836C5.9545 26.26 5.5205 26.898 4.5405 26.656C4.5765 26.706 2.0285 26.03 2.0285 26.03L0.3125 29.986L4.8125 31.108C5.6485 31.318 6.4685 31.538 7.2745 31.744L5.8445 37.488L9.2985 38.348L10.7145 32.668C11.6585 32.922 12.5745 33.158 13.4705 33.382L12.0585 39.038L15.5145 39.898L16.9445 34.166C22.8405 35.282 27.2725 34.832 29.1385 29.5C30.6425 25.208 29.0645 22.73 25.9625 21.116C28.2225 20.596 29.9225 19.11 30.3765 16.04ZM22.4765 27.116C21.4105 31.41 14.1805 29.088 11.8365 28.506L13.7365 20.896C16.0805 21.482 23.5945 22.64 22.4765 27.116ZM23.5465 15.978C22.5725 19.884 16.5565 17.898 14.6065 17.412L16.3265 10.512C18.2765 10.998 24.5625 11.904 23.5465 15.978Z" fill={isBtcSelected ? "#FFAC00" : "#3C3C3C"}/>
               </svg>
             </div>
           </div>
           <div className="w-full justify-evenly space-x-7 flex font-bold">
-          <p className={`select-none pl-6 ${isLtcSelected ? 'text-[#0E9599]' : 'opacity-0'}`}>LTC</p>
-            <p className={`select-none ${isEthSelected ? 'text-[#0E9599]' : 'opacity-0'}`}>ETH</p>
+          <p className={`select-none pl-6 ${isLtcSelected ? 'text-[#898989]' : 'opacity-0'}`}>LTC</p>
+            <p className={`select-none ${isEthSelected ? 'text-[#627EEB]' : 'opacity-0'}`}>ETH</p>
             <p className={`select-none pl-2 ${isUsdtSelected ? 'text-[#0E9599]' : 'opacity-0'}`}>USDT</p>
-            <p className={`select-none ${isBtcSelected ? 'text-[#0E9599]' : 'opacity-0'}`}>BTC</p>
+            <p className={`select-none ${isBtcSelected ? 'text-[#FFAC00]' : 'opacity-0'}`}>BTC</p>
           </div>
           <p className="text-[#636665] font-semibold">Wallet address</p>
           <input type="text" placeholder="Enter wallet address" className="bg-[#1B1B1B] border-[#222222] border-[1px] text-[#4A4A4A] placeholder-[#4A4A4A] p-2 mt-2" />
           <p className="text-[#636665] font-semibold mt-4">Promo Code</p>
-          <div className="flex my-4">
-            <input type="text" placeholder="Enter promo code" className="bg-[#1B1B1B] border-[#222222] border-[1px] text-[#4A4A4A] placeholder-[#4A4A4A] p-2" />
-            <button className="bg-[#1F1F1F] text-[#4A4A4A] p-2">Claim</button>
+          <div className="flex my-4 w-full">
+            <input type="text" placeholder="Enter promo code" className="bg-[#1B1B1B] border-[#222222] w-full border-[1px] text-[#4A4A4A] placeholder-[#4A4A4A] p-2" />
+            <button className="bg-[#1F1F1F] text-[#4A4A4A] p-2 border-[1px] border-[#2B2B2B] px-4">Claim</button>
           </div>
           <p className="text-[#636665] font-medium">Selected Items</p>
           <div className="w-[336px] h-[234px] border-[#222222] border-[1px] bg-[#1B1B1B]"></div>

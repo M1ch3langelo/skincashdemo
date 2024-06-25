@@ -77,3 +77,39 @@ input:checked + .slider:before {
 .coinselected{
   filter: drop-shadow(0 0 10px aqua);
 }
+
+.ltcselected{
+  filter: drop-shadow(0 0 10px #A8A8A8);
+}
+
+.ethselected{
+  filter: drop-shadow(0 0 10px #00A0FF);
+}
+
+.btcselected{
+  filter: drop-shadow(0 0 10px #F7931A);
+}
+
+.ltc {
+  transition: filter 0.3s, box-shadow 0.3s;
+}
+
+.ltc:hover {
+  filter: drop-shadow(0 0 10px #A8A8A8);
+}
+
+.eth {
+  transition: filter 0.3s, box-shadow 0.3s;
+}
+
+.eth:hover {
+  filter: drop-shadow(0 0 2px #00A0FF);
+}
+
+.btc {
+  transition: filter 0.3s, box-shadow 0.3s;
+}
+
+.btc:hover {
+  filter: drop-shadow(0 0 10px #F7931A);
+}
