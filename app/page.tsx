@@ -40,8 +40,11 @@ export default function Home() {
               <option value="volvo">Float</option>
               <option value="saab">0-0.08</option>
             </select>
-            <div className="bg-[#1B1B1B] border-[#222222] border-[1px] text-[#4A4A4A] placeholder-[#4A4A4A] p-2 w-full lg:max-w-[143px] max-h-[48px]">
-            <input type="checkbox" name="select-all" id="select-all" className="accent-[#3FFE9E]" />
+            <div className="bg-[#1B1B1B] border-[#222222] border-[1px] text-[#4A4A4A] placeholder-[#4A4A4A] p-2 w-full lg:max-w-[183px] max-h-[48px] flex items-center">
+            <label className="switch">
+                <input type="checkbox" name="select-all" id="select-all" />
+                <span className="slider"></span>
+            </label>
             <label htmlFor="select-all" className="ml-8">Select All</label>
             </div>
           </div>
