@@ -47,7 +47,7 @@ export default function Home() {
     <Image src="/images/blob2.png" alt="Background" width={552} height={152} className="absolute right-0 -z-10" />
     <main className="home flex flex-col h-full p-4 lg:mx-[5rem]">
       <nav className="nav flex justify-between w-full p-4 text-white">
-        <div className="logo items-center flex">
+        <div className="logo items-center flex mr-4 lg:mr-0">
           <Image src="/images/logo.png" alt="Logo" width={200} height={50} />
         </div>
         <ul className="nav-links flex space-x-4 items-center">
@@ -128,9 +128,9 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full justify-evenly space-x-7 flex font-bold">
-          <p className={`select-none pl-6 ${isLtcSelected ? 'text-[#898989]' : 'opacity-0'}`}>LTC</p>
-            <p className={`select-none ${isEthSelected ? 'text-[#627EEB]' : 'opacity-0'}`}>ETH</p>
-            <p className={`select-none pl-2 ${isUsdtSelected ? 'text-[#0E9599]' : 'opacity-0'}`}>USDT</p>
+          <p className={`select-none pl-4 ${isLtcSelected ? 'text-[#898989]' : 'opacity-0'}`}>LTC</p>
+            <p className={`select-none pl-2 ${isEthSelected ? 'text-[#627EEB]' : 'opacity-0'}`}>ETH</p>
+            <p className={`select-none pl-4 ${isUsdtSelected ? 'text-[#0E9599]' : 'opacity-0'}`}>USDT</p>
             <p className={`select-none ${isBtcSelected ? 'text-[#FFAC00]' : 'opacity-0'}`}>BTC</p>
           </div>
           <p className="text-[#636665] font-semibold">Wallet address</p>
